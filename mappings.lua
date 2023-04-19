@@ -20,9 +20,15 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>fl"] = { ":Telescope current_buffer_fuzzy_find<cr>", desc = "Fuzzy find current buffer"},
+    ["<leader>fs"] = { ":Telescope search_history<cr>", desc = "Fuzzy find search history"},
+    -- TODO:
+    -- quickfix list next, prev, close, open
+    ["<leader>Jo"] = { ":only<cr>", desc = "Show only current buffer"},
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
 }
+
